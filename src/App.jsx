@@ -57,7 +57,7 @@ function App() {
           <button onClick={() => go('#depoimentos')}>Depoimentos</button>
           <button onClick={() => go('#contato')}>Contato</button>
           <button onClick={() => go('#localizacao')}>Localização</button>
-          <button className="mobile-cta" onClick={() => window.open(WHATSAPP_URL, '_blank', 'noopener,noreferrer')}><MessageCircle size={17}/> Agende sua consulta</button>
+          <button className="mobile-cta" onClick={() => window.open(WHATSAPP_URL, '_blank', 'noopener,noreferrer')}><MessageCircle size={17}/> Converse com nossa equipe</button>
         </nav>
         <button className="desktop-cta" onClick={() => window.open(WHATSAPP_URL, '_blank', 'noopener,noreferrer')}><MessageCircle size={17}/> Agende sua consulta</button>
         <button className="menu-toggle" onClick={() => setMenu(v => !v)} aria-label="Abrir menu">{menu ? <X/> : <Menu/>}</button>
@@ -66,11 +66,11 @@ function App() {
       <main>
         <section id="inicio" className="hero section">
           <div className="hero-copy">
-            <div className="eyebrow"><Sparkles size={14}/> APOIO ESPECIALIZADO PARA UM FUTURO MELHOR</div>
-            <h1>Cada criança tem<br/><span>um mundo único.</span><br/><em>Nós ajudamos a descobrir o seu.</em></h1>
-            <p>O Neuro Encanto é um centro de neurodesenvolvimento dedicado ao diagnóstico, acompanhamento e desenvolvimento de crianças e adolescentes, com cuidado próximo às famílias.</p>
-            <div className="hero-actions"><button className="primary" onClick={() => window.open(WHATSAPP_URL, '_blank', 'noopener,noreferrer')}><MessageCircle size={18}/> Agende sua consulta <ArrowUpRight size={17}/></button><button className="text-btn" onClick={() => go('#servicos')}>Conheça nossos serviços <ArrowUpRight size={16}/></button></div>
-            <div className="trust-row"><span><ShieldCheck size={17}/> Atendimento personalizado</span><span><HeartHandshake size={17}/> Cuidado em parceria</span></div>
+            <div className="eyebrow"><Sparkles size={14}/> UM CUIDADO QUE COMEÇA COM ESCUTA</div>
+            <h1>Seu filho é único.<br/><span>O cuidado também</span><br/><em>deve ser.</em></h1>
+            <p>Quando surgem dúvidas sobre o desenvolvimento, encontrar orientação faz diferença. No Neuro Encanto, crianças e adolescentes recebem acompanhamento individualizado, e as famílias encontram escuta, orientação e parceria em cada etapa.</p>
+            <div className="hero-actions"><button className="primary" onClick={() => window.open(WHATSAPP_URL, '_blank', 'noopener,noreferrer')}><MessageCircle size={18}/> Agende sua consulta <ArrowUpRight size={17}/></button><button className="text-btn" onClick={() => go('#servicos')}>Descubra como podemos ajudar <ArrowUpRight size={16}/></button></div>
+            <div className="trust-row"><span><ShieldCheck size={17}/> Olhar para cada criança</span><span><HeartHandshake size={17}/> Família acolhida</span></div>
           </div>
           <div className="hero-visual">
             <div className="hero-photo-wrap"><img src={HERO_PHOTO} alt="Mãe acolhendo sua filha em uma fotografia feita em Ubatuba, São Paulo"/><div className="photo-glow"/></div>
@@ -81,26 +81,26 @@ function App() {
         </section>
 
         <section id="servicos" className="section services-section">
-          <div className="section-heading"><div><div className="eyebrow">NOSSOS SERVIÇOS</div><h2>Acompanhamento completo<br/><span>para cada fase do desenvolvimento.</span></h2></div><p>Oferecemos avaliações e intervenções personalizadas, com base em evidências científicas e nas necessidades únicas de cada criança e adolescente.</p></div>
+          <div className="section-heading"><div><div className="eyebrow">NOSSOS SERVIÇOS</div><h2>Entender as necessidades é<br/><span>o primeiro passo para cuidar melhor.</span></h2></div><p>Cada percurso é diferente. Por isso, o cuidado começa pela compreensão das necessidades da criança e pela construção de um acompanhamento alinhado à sua realidade.</p></div>
           <div className="service-grid">{services.map(({icon: Icon, title, text}) => <article className="service-card" key={title}><div className="icon-box"><Icon size={23}/></div><h3>{title}</h3><p>{text}</p><ArrowUpRight className="card-arrow" size={18}/></article>)}</div>
         </section>
 
         <section id="sobre" className="section about-section">
           <div className="about-photo"><img src={CLINIC_PHOTO} alt="Crianças brincando e aprendendo em uma sala de aula em Bezerros, Pernambuco"/><div className="three-d-badge"><div className="mini-orb"><Brain size={25}/></div><span>Neuro<br/><b>Encanto</b></span></div></div>
-          <div className="about-copy"><div className="eyebrow">POR QUE ESCOLHER O NEURO ENCANTO?</div><h2>Mais que terapias,<br/><span>acolhemos histórias.</span></h2><p>Aqui, cada criança é vista, ouvida e respeitada em sua individualidade. Nosso compromisso é promover avanços reais, com uma equipe especializada, ambiente acolhedor e um plano de cuidado personalizado.</p><div className="pill-row"><div><Users/><span>Equipe multidisciplinar</span></div><div><HeartHandshake/><span>Atendimento personalizado</span></div><div><ShieldCheck/><span>Ambiente seguro e acolhedor</span></div></div></div>
+          <div className="about-copy"><div className="eyebrow">POR QUE ESCOLHER O NEURO ENCANTO?</div><h2>A criança vem primeiro.<br/><span>A família caminha junto.</span></h2><p>Cada família chega com perguntas, expectativas e uma história própria. Nosso trabalho é ouvir sem julgamentos, compreender as necessidades e orientar os próximos passos com atenção, respeito e um plano de cuidado individualizado.</p><div className="pill-row"><div><Users/><span>Equipe multidisciplinar</span></div><div><HeartHandshake/><span>Atendimento personalizado</span></div><div><ShieldCheck/><span>Ambiente seguro e acolhedor</span></div></div></div>
         </section>
 
         <section id="equipe" className="section team-section">
-          <div className="eyebrow">CUIDADO EM EQUIPE</div><h2>Profissionais que trabalham<br/><span>em conjunto pelo desenvolvimento.</span></h2>
+          <div className="eyebrow">CUIDADO EM EQUIPE</div><h2>Um olhar integrado para<br/><span>necessidades que são únicas.</span></h2>
           <div className="team-orbit"><div className="center-node"><Brain size={42}/><span>Neuro<br/>Encanto</span></div><div className="orbit-card o1"><Stethoscope/><b>Avaliação</b><small>olhar clínico</small></div><div className="orbit-card o2"><Speech/><b>Comunicação</b><small>fonoaudiologia</small></div><div className="orbit-card o3"><Puzzle/><b>Aprendizagem</b><small>psicopedagogia</small></div><div className="orbit-card o4"><HandHeart/><b>Autonomia</b><small>terapia ocupacional</small></div></div>
         </section>
 
         <section id="depoimentos" className="section testimonials-section">
-          <div className="section-heading"><div><div className="eyebrow">DEPOIMENTOS</div><h2>Famílias que confiam,<br/><span>crianças que evoluem.</span></h2></div><p>Veja o que dizem pais e responsáveis que já fazem parte da nossa jornada.</p></div>
+          <div className="section-heading"><div><div className="eyebrow">DEPOIMENTOS</div><h2>Cuidado construído com<br/><span>escuta, orientação e parceria.</span></h2></div><p>Conheça nossa proposta de cuidado e converse com a equipe para entender qual pode ser o próximo passo para sua família.</p></div>
           <div className="testimonial-grid">{testimonials.map(([name, role, quote]) => <article className="testimonial" key={name}><div className="stars">{[1,2,3,4,5].map(i => <Star key={i} size={15} fill="currentColor"/>)}</div><p>{quote}</p><div><b>{name}</b><small>{role}</small></div></article>)}</div>
         </section>
 
-        <section id="contato" className="cta-section"><div><div className="eyebrow light">VAMOS COMEÇAR?</div><h2>Agende uma avaliação<br/>e dê o primeiro passo.</h2></div><p>Entre em contato e tire suas dúvidas. Estamos prontos para caminhar com você e com seu filho nessa jornada.</p><button className="cta-light" onClick={() => window.open(WHATSAPP_URL, '_blank', 'noopener,noreferrer')}><MessageCircle size={18}/> Agendar agora <ArrowUpRight size={17}/></button><div className="address-line"><span>{ADDRESS}</span><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Instagram @neuro.encanto</a></div><div className="scribble">Juntos por<br/><b>mais conquistas!</b> ♡</div></section>
+        <section id="contato" className="cta-section"><div><div className="eyebrow light">VAMOS COMEÇAR?</div><h2>Vamos conversar sobre<br/>o desenvolvimento do seu filho?</h2></div><p>Conte à nossa equipe o que você está buscando. Vamos ouvir suas dúvidas e orientar você sobre os serviços e as possibilidades de atendimento.</p><button className="cta-light" onClick={() => window.open(WHATSAPP_URL, '_blank', 'noopener,noreferrer')}><MessageCircle size={18}/> Quero conversar com a equipe <ArrowUpRight size={17}/></button><div className="address-line"><span>{ADDRESS}</span><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Instagram @neuro.encanto</a></div><div className="scribble">Cada passo<br/><b>começa com acolhimento.</b></div></section>
 
         <section id="localizacao" className="section location-section"><div className="section-heading location-heading"><div><div className="eyebrow">ONDE ESTAMOS</div><h2>Um espaço pensado para acolher <span>crianças e famílias.</span></h2></div><p>Encontre o Neuro Encanto na Avenida Deputado Ceci Cunha, em Arapiraca. Consulte a rota no Google Maps antes da sua visita.</p></div><div className="map-card"><iframe title="Mapa do Neuro Encanto" src={`https://www.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe><div className="map-info"><div><strong>Neuro Encanto</strong><span>{ADDRESS}</span></div><a href={MAPS_URL} target="_blank" rel="noreferrer"><MapPin size={17}/> Abrir no Google Maps <ArrowUpRight size={16}/></a></div></div></section>
       </main>
