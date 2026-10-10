@@ -19,8 +19,8 @@ const WHATSAPP_URL = 'https://wa.me/5582996570350';
 const INSTAGRAM_URL = 'https://instagram.com/neuro.encanto';
 const ADDRESS = 'Avenida Deputado Ceci Cunha, 1397, Arapiraca - AL';
 const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(ADDRESS);
-const HERO_PHOTO = 'https://images.pexels.com/photos/7447259/pexels-photo-7447259.jpeg?auto=compress&cs=tinysrgb&w=1400';
-const CLINIC_PHOTO = 'https://images.pexels.com/photos/8653974/pexels-photo-8653974.jpeg?auto=compress&cs=tinysrgb&w=1400';
+const HERO_PHOTO = 'https://images.unsplash.com/photo-1694185751528-248fe3eafbde?auto=format&fit=crop&w=1400&q=85';
+const CLINIC_PHOTO = 'https://images.pexels.com/photos/9534164/pexels-photo-9534164.jpeg?auto=compress&cs=tinysrgb&w=1400';
 
 const testimonials = [
   ['Juliana Martins', 'Mãe do Lucas', '“O Neuro Encanto foi um divisor de águas para nossa família. Hoje vemos nosso filho muito mais confiante e feliz.”'],
@@ -73,7 +73,7 @@ function App() {
             <div className="trust-row"><span><ShieldCheck size={17}/> Atendimento personalizado</span><span><HeartHandshake size={17}/> Cuidado em parceria</span></div>
           </div>
           <div className="hero-visual">
-            <div className="hero-photo-wrap"><img src={HERO_PHOTO} alt="Criança com a família em um momento de acolhimento"/><div className="photo-glow"/></div>
+            <div className="hero-photo-wrap"><img src={HERO_PHOTO} alt="Mãe acolhendo sua filha em uma fotografia feita em Ubatuba, São Paulo"/><div className="photo-glow"/></div>
             <div className="floating-card card-one"><Brain size={20}/><span><b>Desenvolvimento</b><small>olhar individualizado</small></span></div>
             <div className="floating-card card-two"><HeartHandshake size={20}/><span><b>Cuidado próximo</b><small>família no centro</small></span></div>
             <div className="orb orb-a"/><div className="orb orb-b"/>
@@ -86,7 +86,7 @@ function App() {
         </section>
 
         <section id="sobre" className="section about-section">
-          <div className="about-photo"><img src={CLINIC_PHOTO} alt="Crianças participando de uma atividade terapêutica"/><div className="three-d-badge"><div className="mini-orb"><Brain size={25}/></div><span>Neuro<br/><b>Encanto</b></span></div></div>
+          <div className="about-photo"><img src={CLINIC_PHOTO} alt="Crianças brincando e aprendendo em uma sala de aula em Bezerros, Pernambuco"/><div className="three-d-badge"><div className="mini-orb"><Brain size={25}/></div><span>Neuro<br/><b>Encanto</b></span></div></div>
           <div className="about-copy"><div className="eyebrow">POR QUE ESCOLHER O NEURO ENCANTO?</div><h2>Mais que terapias,<br/><span>acolhemos histórias.</span></h2><p>Aqui, cada criança é vista, ouvida e respeitada em sua individualidade. Nosso compromisso é promover avanços reais, com uma equipe especializada, ambiente acolhedor e um plano de cuidado personalizado.</p><div className="pill-row"><div><Users/><span>Equipe multidisciplinar</span></div><div><HeartHandshake/><span>Atendimento personalizado</span></div><div><ShieldCheck/><span>Ambiente seguro e acolhedor</span></div></div></div>
         </section>
 
